@@ -9,6 +9,9 @@ module.exports = {
         "custom-fourth": "#F16E07",
         "custom-fifth": "#B02572",
       },
+      fontFamily: {
+        poppins: "Poppins",
+      },
     },
   },
   plugins: [],
