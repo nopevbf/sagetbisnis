@@ -8,6 +8,7 @@ module.exports = {
         "custom-third": "#BC335E",
         "custom-fourth": "#F16E07",
         "custom-fifth": "#B02572",
+        background: "#EAEAEA",
       },
       fontFamily: {
         poppins: "Poppins",

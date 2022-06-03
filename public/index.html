@@ -1,402 +1,939 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <title>Welcome - SagetBisnis</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/public/css/style.css" />
-  <title>Welcome - SagetBisnis</title>
-</head>
+  <body class="font-poppins">
+    <!-- Start Header -->
 
-<body class="font-poppins">
-  <!-- Start Header -->
+    <header
+      class="bg-white shadow fixed top-0 left-0 right-0 w-full flex items-center"
+    >
+      <div class="container mx-auto -my-2">
+        <nav class="w-full flex flex-wrap items-center justify-between py-3">
+          <div
+            class="w-full flex flex-wrap items-center justify-between px-3 md:px-20"
+          >
+            <div class="flex items-center">
+              <img
+                class="max-h-12"
+                src="/src/images/logoSagetBisnis.svg"
+                alt=""
+              />
+              <!-- Left links -->
+              <ul
+                class="navbar-nav hidden md:flex flex-wrap pl-6 list-style-none mr-auto"
+              >
+                <li
+                  class="nav-item p-2 font-bold text-custom-third border-b-4 border-custom-third"
+                >
+                  <a class="nav-link" href="#">Beranda</a>
+                </li>
+                <li
+                  class="nav-item p-2 hover:border-b-4 hover:border-custom-third hover:border-opacity-20"
+                >
+                  <a
+                    class="nav-link opacity-60 hover:text-custom-third hover:opacity-90 focus:opacity-90 active:font-bold active:text-custom-third focus:font-bold focus:text-custom-third p-0"
+                    href="#"
+                    >Kelas</a
+                  >
+                </li>
+                <li
+                  class="nav-item p-2 hover:border-b-4 hover:border-custom-third hover:border-opacity-20"
+                >
+                  <a
+                    class="nav-link opacity-60 hover:text-custom-third hover:opacity-90 focus:opacity-90 active:font-bold active:text-custom-third focus:font-bold focus:text-custom-third p-0"
+                    href="#"
+                    >Testimoni</a
+                  >
+                </li>
+                <li
+                  class="nav-item p-2 hover:border-b-4 hover:border-custom-third hover:border-opacity-20"
+                >
+                  <a
+                    class="nav-link opacity-60 hover:text-custom-third hover:opacity-90 focus:opacity-90 active:font-bold active:text-custom-third focus:font-bold focus:text-custom-third p-0"
+                    href="#"
+                    >Blog</a
+                  >
+                </li>
+                <li
+                  class="nav-item p-2 hover:border-b-4 hover:border-custom-third hover:border-opacity-20"
+                >
+                  <a
+                    class="nav-link opacity-60 hover:text-custom-third hover:opacity-90 focus:opacity-90 active:font-bold active:text-custom-third focus:font-bold focus:text-custom-third p-0"
+                    href="#"
+                    >Tentang</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-  <header class="bg-white shadow fixed top-0 left-0 right-0 w-full flex items-center">
-    <div class="container mx-auto -my-2">
-      <nav class="w-full flex flex-wrap items-center justify-between py-3">
-        <div class="w-full flex flex-wrap items-center justify-between px-3 md:px-20">
-          <div class="flex items-center">
-            <img class="max-h-12" src="/src/images/logoSagetBisnis.svg" alt="" />
-            <!-- Left links -->
-            <ul class="navbar-nav hidden md:flex flex-wrap pl-6 list-style-none mr-auto">
-              <li class="nav-item p-2 font-bold text-custom-third border-b-4 border-custom-third">
-                <a class="nav-link" href="#">Beranda</a>
-              </li>
-              <li class="nav-item p-2 hover:border-b-4 hover:border-custom-third hover:border-opacity-20">
-                <a class="nav-link opacity-60 hover:text-custom-third hover:opacity-90 focus:opacity-90 active:font-bold active:text-custom-third focus:font-bold focus:text-custom-third p-0"
-                  href="#">Kelas</a>
-              </li>
-              <li class="nav-item p-2 hover:border-b-4 hover:border-custom-third hover:border-opacity-20">
-                <a class="nav-link opacity-60 hover:text-custom-third hover:opacity-90 focus:opacity-90 active:font-bold active:text-custom-third focus:font-bold focus:text-custom-third p-0"
-                  href="#">Testimoni</a>
-              </li>
-              <li class="nav-item p-2 hover:border-b-4 hover:border-custom-third hover:border-opacity-20">
-                <a class="nav-link opacity-60 hover:text-custom-third hover:opacity-90 focus:opacity-90 active:font-bold active:text-custom-third focus:font-bold focus:text-custom-third p-0"
-                  href="#">Blog</a>
-              </li>
-              <li class="nav-item p-2 hover:border-b-4 hover:border-custom-third hover:border-opacity-20">
-                <a class="nav-link opacity-60 hover:text-custom-third hover:opacity-90 focus:opacity-90 active:font-bold active:text-custom-third focus:font-bold focus:text-custom-third p-0"
-                  href="#">Tentang</a>
-              </li>
-            </ul>
+            <!-- Right elements -->
+            <div class="flex items-center relative space-x-4">
+              <a href=""
+                ><button class="font-bold text-custom-third hover:opacity-90">
+                  Login
+                </button></a
+              >
+              <a href=""
+                ><button
+                  class="px-5 py-2 bg-gradient-to-r from-custom-primary to-custom-third text-white p-2 rounded-lg hover:opacity-90"
+                >
+                  Register
+                </button></a
+              >
+            </div>
           </div>
-
-          <!-- Right elements -->
-          <div class="flex items-center relative space-x-4">
-            <a href=""><button class="font-bold text-custom-third hover:opacity-90">
-                Login
-              </button></a>
-            <a href=""><button
-                class="px-5 py-2 bg-gradient-to-r from-custom-primary to-custom-third text-white p-2 rounded-lg hover:opacity-90">
-                Register
-              </button></a>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <!-- End Header -->
-
-  <!-- Hero section start -->
-  <section class="pt-10">
-    <div class="container md:mx-auto">
-      <div class="flex flex-wrap">
-        <div class="w-full self-center px-3 mt-6 md:px-20 lg:w-1/2">
-          <h1 class="font-medium md:text-4xl text-3xl">
-            Tingkatkan Keterampilan Anda Menjadi Lebih
-            <span
-              class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-custom-primary to-custom-third">Profesional</span>
-            dan <span class="font-bold text-custom-fourth">Kreatif</span>
-          </h1>
-          <p class="pt-4 font-light pb-6 text-2xl">
-            Mari belajar bersama dengan media yang mudah dipahami, dengan
-            ratusan materi terbaru
-          </p>
-          <a href="#"
-            class="font-semibold px-10 py-3 text-lg text-white bg-gradient-to-r from-custom-primary to-custom-third rounded-lg hover:opacity-90">GET
-            STARTED</a>
-        </div>
-        <div class="w-full self-end mt-6 md:mt-4 lg:w-1/2">
-          <div class="lg:mt-9 lg:right-0">
-            <img src="/src/images/background_abstrak.svg" alt="picture" class="mx-auto" />
-          </div>
-        </div>
+        </nav>
       </div>
-    </div>
-  </section>
-  <!-- Hero section end -->
+    </header>
+    <!-- End Header -->
 
-  <!-- class Start -->
-  <section class="pt-4">
-    <div class="container md:mx-auto">
-      <div class="max-w-xl mx-auto text-center mb-16">
-        <h4 class="font-semibold text-2xl text-custom-third">Kelas Kami</h4>
-        <h2 class="pt-6 font-semibold text-3xl mb-4 sm:text-4xl lg:text-3xl">
-          Kursus Terbaik Dengan Hasil Memuaskan
-        </h2>
-      </div>
-      <div class="flex flex-wrap">
-        <div class="w-auto mx-auto">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-            <img src="https://source.unsplash.com/329x183?programming" alt="Portofolio 1" class="w-full" />
-            <div class="pt-4 pb-8 px-6 mb-auto space-y-2">
-              <div class="flex">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-custom-secondary" viewBox="0 0 20 20"
-                  fill="currentColor">
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <div class="mx-2 font-light">5</div>
-                <div class="font-light">(500)</div>
-              </div>
-              <div class="flex">
-                <div class="text-xl font-bold w-full">UX Designer</div>
-                <div class="font-light">Rp&nbsp;200.000</div>
-              </div>
-              <div class="w-full">Mentor - Herdetya</div>
-              <div class="flex justify-between items-center">
-                <div class="flex">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16.719 19.752L16.079 14.628C15.9883 13.9022 15.6356 13.2346 15.0872 12.7506C14.5387 12.2667 13.8324 11.9997 13.101 12H10.897C10.1659 12.0002 9.46007 12.2674 8.91208 12.7513C8.36408 13.2352 8.01165 13.9026 7.92099 14.628L7.27999 19.752C7.24481 20.0335 7.26993 20.3193 7.35367 20.5903C7.43741 20.8614 7.57786 21.1116 7.7657 21.3242C7.95353 21.5368 8.18445 21.707 8.44312 21.8235C8.70179 21.94 8.98229 22.0002 9.26599 22H14.734C15.0176 22.0001 15.298 21.9398 15.5565 21.8232C15.8151 21.7066 16.0459 21.5364 16.2336 21.3238C16.4213 21.1112 16.5617 20.8611 16.6454 20.5901C16.7291 20.3191 16.7542 20.0334 16.719 19.752V19.752Z"
-                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M4 11C5.10457 11 6 10.1046 6 9C6 7.89543 5.10457 7 4 7C2.89543 7 2 7.89543 2 9C2 10.1046 2.89543 11 4 11Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M20 11C21.1046 11 22 10.1046 22 9C22 7.89543 21.1046 7 20 7C18.8954 7 18 7.89543 18 9C18 10.1046 18.8954 11 20 11Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M20 14H20.306C20.7794 13.9999 21.2375 14.1678 21.5988 14.4738C21.9601 14.7798 22.2011 15.204 22.279 15.671L22.612 17.671C22.6598 17.9575 22.6446 18.2511 22.5674 18.5311C22.4903 18.8112 22.353 19.0711 22.1653 19.2928C21.9775 19.5144 21.7437 19.6925 21.4801 19.8146C21.2165 19.9368 20.9295 20 20.639 20H17M3.99999 14H3.69399C3.22056 13.9999 2.76245 14.1678 2.40117 14.4738C2.03989 14.7798 1.79887 15.204 1.72099 15.671L1.38799 17.671C1.34021 17.9575 1.35542 18.2511 1.43256 18.5311C1.50971 18.8112 1.64695 19.0711 1.83472 19.2928C2.0225 19.5144 2.25631 19.6925 2.51989 19.8146C2.78347 19.9368 3.07049 20 3.36099 20H6.99999L3.99999 14Z"
-                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  <div class="ml-3">400</div>
-                </div>
-                <div>
-                  <a href="#"
-                    class="py-2 px-4 rounded-full border-2 border-solid border-custom-third bg-white text-custom-third font-semibold hover:text-white hover:bg-gradient-to-r hover:from-custom-primary hover:to-custom-third">Lihat
-                    Kelas</a>
-                </div>
-              </div>
-            </div>
+    <!-- Hero section start -->
+    <section class="pt-10">
+      <div class="container md:mx-auto">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-3 mt-6 md:px-20 lg:w-1/2">
+            <h1 class="font-medium md:text-4xl text-3xl">
+              Tingkatkan Keterampilan Anda Menjadi Lebih
+              <span
+                class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-custom-primary to-custom-third"
+                >Profesional</span
+              >
+              dan <span class="font-bold text-custom-fourth">Kreatif</span>
+            </h1>
+            <p class="pt-4 font-light pb-6 text-2xl">
+              Mari belajar bersama dengan media yang mudah dipahami, dengan
+              ratusan materi terbaru
+            </p>
+            <a
+              href="#"
+              class="font-semibold px-10 py-3 text-lg text-white bg-gradient-to-r from-custom-primary to-custom-third rounded-lg hover:opacity-90"
+              >GET STARTED</a
+            >
           </div>
-        </div>
-        <div class="w-auto mx-auto">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-            <img src="https://source.unsplash.com/329x183?online" alt="Portofolio 1" class="w-full" />
-            <div class="pt-4 pb-8 px-6 mb-auto space-y-2">
-              <div class="flex">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-custom-secondary" viewBox="0 0 20 20"
-                  fill="currentColor">
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <div class="mx-2 font-light">5</div>
-                <div class="font-light">(500)</div>
-              </div>
-              <div class="flex">
-                <div class="text-xl font-bold w-full">UX Designer</div>
-                <div class="font-light">Rp&nbsp;200.000</div>
-              </div>
-              <div class="w-full">Mentor - Herdetya</div>
-              <div class="flex justify-between items-center">
-                <div class="flex">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16.719 19.752L16.079 14.628C15.9883 13.9022 15.6356 13.2346 15.0872 12.7506C14.5387 12.2667 13.8324 11.9997 13.101 12H10.897C10.1659 12.0002 9.46007 12.2674 8.91208 12.7513C8.36408 13.2352 8.01165 13.9026 7.92099 14.628L7.27999 19.752C7.24481 20.0335 7.26993 20.3193 7.35367 20.5903C7.43741 20.8614 7.57786 21.1116 7.7657 21.3242C7.95353 21.5368 8.18445 21.707 8.44312 21.8235C8.70179 21.94 8.98229 22.0002 9.26599 22H14.734C15.0176 22.0001 15.298 21.9398 15.5565 21.8232C15.8151 21.7066 16.0459 21.5364 16.2336 21.3238C16.4213 21.1112 16.5617 20.8611 16.6454 20.5901C16.7291 20.3191 16.7542 20.0334 16.719 19.752V19.752Z"
-                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M4 11C5.10457 11 6 10.1046 6 9C6 7.89543 5.10457 7 4 7C2.89543 7 2 7.89543 2 9C2 10.1046 2.89543 11 4 11Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M20 11C21.1046 11 22 10.1046 22 9C22 7.89543 21.1046 7 20 7C18.8954 7 18 7.89543 18 9C18 10.1046 18.8954 11 20 11Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M20 14H20.306C20.7794 13.9999 21.2375 14.1678 21.5988 14.4738C21.9601 14.7798 22.2011 15.204 22.279 15.671L22.612 17.671C22.6598 17.9575 22.6446 18.2511 22.5674 18.5311C22.4903 18.8112 22.353 19.0711 22.1653 19.2928C21.9775 19.5144 21.7437 19.6925 21.4801 19.8146C21.2165 19.9368 20.9295 20 20.639 20H17M3.99999 14H3.69399C3.22056 13.9999 2.76245 14.1678 2.40117 14.4738C2.03989 14.7798 1.79887 15.204 1.72099 15.671L1.38799 17.671C1.34021 17.9575 1.35542 18.2511 1.43256 18.5311C1.50971 18.8112 1.64695 19.0711 1.83472 19.2928C2.0225 19.5144 2.25631 19.6925 2.51989 19.8146C2.78347 19.9368 3.07049 20 3.36099 20H6.99999L3.99999 14Z"
-                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  <div class="ml-3">400</div>
-                </div>
-                <div>
-                  <a href="#"
-                    class="py-2 px-4 rounded-full border-2 border-solid border-custom-third bg-white text-custom-third font-semibold hover:text-white hover:bg-gradient-to-r hover:from-custom-primary hover:to-custom-third">Lihat
-                    Kelas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-auto mx-auto">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-            <img src="https://source.unsplash.com/329x183?learning" alt="Portofolio 1" class="w-full" />
-            <div class="pt-4 pb-8 px-6 mb-auto space-y-2">
-              <div class="flex">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-custom-secondary" viewBox="0 0 20 20"
-                  fill="currentColor">
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <div class="mx-2 font-light">5</div>
-                <div class="font-light">(500)</div>
-              </div>
-              <div class="flex">
-                <div class="text-xl font-bold w-full">UX Designer</div>
-                <div class="font-light">Rp&nbsp;200.000</div>
-              </div>
-              <div class="w-full">Mentor - Herdetya</div>
-              <div class="flex justify-between items-center">
-                <div class="flex">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16.719 19.752L16.079 14.628C15.9883 13.9022 15.6356 13.2346 15.0872 12.7506C14.5387 12.2667 13.8324 11.9997 13.101 12H10.897C10.1659 12.0002 9.46007 12.2674 8.91208 12.7513C8.36408 13.2352 8.01165 13.9026 7.92099 14.628L7.27999 19.752C7.24481 20.0335 7.26993 20.3193 7.35367 20.5903C7.43741 20.8614 7.57786 21.1116 7.7657 21.3242C7.95353 21.5368 8.18445 21.707 8.44312 21.8235C8.70179 21.94 8.98229 22.0002 9.26599 22H14.734C15.0176 22.0001 15.298 21.9398 15.5565 21.8232C15.8151 21.7066 16.0459 21.5364 16.2336 21.3238C16.4213 21.1112 16.5617 20.8611 16.6454 20.5901C16.7291 20.3191 16.7542 20.0334 16.719 19.752V19.752Z"
-                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M4 11C5.10457 11 6 10.1046 6 9C6 7.89543 5.10457 7 4 7C2.89543 7 2 7.89543 2 9C2 10.1046 2.89543 11 4 11Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M20 11C21.1046 11 22 10.1046 22 9C22 7.89543 21.1046 7 20 7C18.8954 7 18 7.89543 18 9C18 10.1046 18.8954 11 20 11Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M20 14H20.306C20.7794 13.9999 21.2375 14.1678 21.5988 14.4738C21.9601 14.7798 22.2011 15.204 22.279 15.671L22.612 17.671C22.6598 17.9575 22.6446 18.2511 22.5674 18.5311C22.4903 18.8112 22.353 19.0711 22.1653 19.2928C21.9775 19.5144 21.7437 19.6925 21.4801 19.8146C21.2165 19.9368 20.9295 20 20.639 20H17M3.99999 14H3.69399C3.22056 13.9999 2.76245 14.1678 2.40117 14.4738C2.03989 14.7798 1.79887 15.204 1.72099 15.671L1.38799 17.671C1.34021 17.9575 1.35542 18.2511 1.43256 18.5311C1.50971 18.8112 1.64695 19.0711 1.83472 19.2928C2.0225 19.5144 2.25631 19.6925 2.51989 19.8146C2.78347 19.9368 3.07049 20 3.36099 20H6.99999L3.99999 14Z"
-                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  <div class="ml-3">400</div>
-                </div>
-                <div>
-                  <a href="#"
-                    class="py-2 px-4 rounded-full border-2 border-solid border-custom-third bg-white text-custom-third font-semibold hover:text-white hover:bg-gradient-to-r hover:from-custom-primary hover:to-custom-third">Lihat
-                    Kelas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-auto mx-auto">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-            <img src="https://source.unsplash.com/329x183?class" alt="Portofolio 1" class="w-full" />
-            <div class="pt-4 pb-8 px-6 mb-auto space-y-2">
-              <div class="flex">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-custom-secondary" viewBox="0 0 20 20"
-                  fill="currentColor">
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <div class="mx-2 font-light">5</div>
-                <div class="font-light">(500)</div>
-              </div>
-              <div class="flex">
-                <div class="text-xl font-bold w-full">UX Designer</div>
-                <div class="font-light">Rp&nbsp;200.000</div>
-              </div>
-              <div class="w-full">Mentor - Herdetya</div>
-              <div class="flex justify-between items-center">
-                <div class="flex">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16.719 19.752L16.079 14.628C15.9883 13.9022 15.6356 13.2346 15.0872 12.7506C14.5387 12.2667 13.8324 11.9997 13.101 12H10.897C10.1659 12.0002 9.46007 12.2674 8.91208 12.7513C8.36408 13.2352 8.01165 13.9026 7.92099 14.628L7.27999 19.752C7.24481 20.0335 7.26993 20.3193 7.35367 20.5903C7.43741 20.8614 7.57786 21.1116 7.7657 21.3242C7.95353 21.5368 8.18445 21.707 8.44312 21.8235C8.70179 21.94 8.98229 22.0002 9.26599 22H14.734C15.0176 22.0001 15.298 21.9398 15.5565 21.8232C15.8151 21.7066 16.0459 21.5364 16.2336 21.3238C16.4213 21.1112 16.5617 20.8611 16.6454 20.5901C16.7291 20.3191 16.7542 20.0334 16.719 19.752V19.752Z"
-                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M4 11C5.10457 11 6 10.1046 6 9C6 7.89543 5.10457 7 4 7C2.89543 7 2 7.89543 2 9C2 10.1046 2.89543 11 4 11Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M20 11C21.1046 11 22 10.1046 22 9C22 7.89543 21.1046 7 20 7C18.8954 7 18 7.89543 18 9C18 10.1046 18.8954 11 20 11Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M20 14H20.306C20.7794 13.9999 21.2375 14.1678 21.5988 14.4738C21.9601 14.7798 22.2011 15.204 22.279 15.671L22.612 17.671C22.6598 17.9575 22.6446 18.2511 22.5674 18.5311C22.4903 18.8112 22.353 19.0711 22.1653 19.2928C21.9775 19.5144 21.7437 19.6925 21.4801 19.8146C21.2165 19.9368 20.9295 20 20.639 20H17M3.99999 14H3.69399C3.22056 13.9999 2.76245 14.1678 2.40117 14.4738C2.03989 14.7798 1.79887 15.204 1.72099 15.671L1.38799 17.671C1.34021 17.9575 1.35542 18.2511 1.43256 18.5311C1.50971 18.8112 1.64695 19.0711 1.83472 19.2928C2.0225 19.5144 2.25631 19.6925 2.51989 19.8146C2.78347 19.9368 3.07049 20 3.36099 20H6.99999L3.99999 14Z"
-                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  <div class="ml-3">400</div>
-                </div>
-                <div>
-                  <a href="#"
-                    class="py-2 px-4 rounded-full border-2 border-solid border-custom-third bg-white text-custom-third font-semibold hover:text-white hover:bg-gradient-to-r hover:from-custom-primary hover:to-custom-third">Lihat
-                    Kelas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-auto mx-auto">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-            <img src="https://source.unsplash.com/329x183?cooking" alt="Portofolio 1" class="w-full" />
-            <div class="pt-4 pb-8 px-6 mb-auto space-y-2">
-              <div class="flex">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-custom-secondary" viewBox="0 0 20 20"
-                  fill="currentColor">
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <div class="mx-2 font-light">5</div>
-                <div class="font-light">(500)</div>
-              </div>
-              <div class="flex">
-                <div class="text-xl font-bold w-full">UX Designer</div>
-                <div class="font-light">Rp&nbsp;200.000</div>
-              </div>
-              <div class="w-full">Mentor - Herdetya</div>
-              <div class="flex justify-between items-center">
-                <div class="flex">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16.719 19.752L16.079 14.628C15.9883 13.9022 15.6356 13.2346 15.0872 12.7506C14.5387 12.2667 13.8324 11.9997 13.101 12H10.897C10.1659 12.0002 9.46007 12.2674 8.91208 12.7513C8.36408 13.2352 8.01165 13.9026 7.92099 14.628L7.27999 19.752C7.24481 20.0335 7.26993 20.3193 7.35367 20.5903C7.43741 20.8614 7.57786 21.1116 7.7657 21.3242C7.95353 21.5368 8.18445 21.707 8.44312 21.8235C8.70179 21.94 8.98229 22.0002 9.26599 22H14.734C15.0176 22.0001 15.298 21.9398 15.5565 21.8232C15.8151 21.7066 16.0459 21.5364 16.2336 21.3238C16.4213 21.1112 16.5617 20.8611 16.6454 20.5901C16.7291 20.3191 16.7542 20.0334 16.719 19.752V19.752Z"
-                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M4 11C5.10457 11 6 10.1046 6 9C6 7.89543 5.10457 7 4 7C2.89543 7 2 7.89543 2 9C2 10.1046 2.89543 11 4 11Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M20 11C21.1046 11 22 10.1046 22 9C22 7.89543 21.1046 7 20 7C18.8954 7 18 7.89543 18 9C18 10.1046 18.8954 11 20 11Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M20 14H20.306C20.7794 13.9999 21.2375 14.1678 21.5988 14.4738C21.9601 14.7798 22.2011 15.204 22.279 15.671L22.612 17.671C22.6598 17.9575 22.6446 18.2511 22.5674 18.5311C22.4903 18.8112 22.353 19.0711 22.1653 19.2928C21.9775 19.5144 21.7437 19.6925 21.4801 19.8146C21.2165 19.9368 20.9295 20 20.639 20H17M3.99999 14H3.69399C3.22056 13.9999 2.76245 14.1678 2.40117 14.4738C2.03989 14.7798 1.79887 15.204 1.72099 15.671L1.38799 17.671C1.34021 17.9575 1.35542 18.2511 1.43256 18.5311C1.50971 18.8112 1.64695 19.0711 1.83472 19.2928C2.0225 19.5144 2.25631 19.6925 2.51989 19.8146C2.78347 19.9368 3.07049 20 3.36099 20H6.99999L3.99999 14Z"
-                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  <div class="ml-3">400</div>
-                </div>
-                <div>
-                  <a href="#"
-                    class="py-2 px-4 rounded-full border-2 border-solid border-custom-third bg-white text-custom-third font-semibold hover:text-white hover:bg-gradient-to-r hover:from-custom-primary hover:to-custom-third">Lihat
-                    Kelas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-auto mx-auto">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-            <img src="https://source.unsplash.com/329x183?content" alt="Portofolio 1" class="w-full" />
-            <div class="pt-4 pb-8 px-6 mb-auto space-y-2">
-              <div class="flex">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-custom-secondary" viewBox="0 0 20 20"
-                  fill="currentColor">
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <div class="mx-2 font-light">5</div>
-                <div class="font-light">(500)</div>
-              </div>
-              <div class="flex">
-                <div class="text-xl font-bold w-full">UX Designer</div>
-                <div class="font-light">Rp&nbsp;200.000</div>
-              </div>
-              <div class="w-full">Mentor - Herdetya</div>
-              <div class="flex justify-between items-center">
-                <div class="flex">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16.719 19.752L16.079 14.628C15.9883 13.9022 15.6356 13.2346 15.0872 12.7506C14.5387 12.2667 13.8324 11.9997 13.101 12H10.897C10.1659 12.0002 9.46007 12.2674 8.91208 12.7513C8.36408 13.2352 8.01165 13.9026 7.92099 14.628L7.27999 19.752C7.24481 20.0335 7.26993 20.3193 7.35367 20.5903C7.43741 20.8614 7.57786 21.1116 7.7657 21.3242C7.95353 21.5368 8.18445 21.707 8.44312 21.8235C8.70179 21.94 8.98229 22.0002 9.26599 22H14.734C15.0176 22.0001 15.298 21.9398 15.5565 21.8232C15.8151 21.7066 16.0459 21.5364 16.2336 21.3238C16.4213 21.1112 16.5617 20.8611 16.6454 20.5901C16.7291 20.3191 16.7542 20.0334 16.719 19.752V19.752Z"
-                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M4 11C5.10457 11 6 10.1046 6 9C6 7.89543 5.10457 7 4 7C2.89543 7 2 7.89543 2 9C2 10.1046 2.89543 11 4 11Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M20 11C21.1046 11 22 10.1046 22 9C22 7.89543 21.1046 7 20 7C18.8954 7 18 7.89543 18 9C18 10.1046 18.8954 11 20 11Z"
-                      stroke="black" stroke-width="2" />
-                    <path
-                      d="M20 14H20.306C20.7794 13.9999 21.2375 14.1678 21.5988 14.4738C21.9601 14.7798 22.2011 15.204 22.279 15.671L22.612 17.671C22.6598 17.9575 22.6446 18.2511 22.5674 18.5311C22.4903 18.8112 22.353 19.0711 22.1653 19.2928C21.9775 19.5144 21.7437 19.6925 21.4801 19.8146C21.2165 19.9368 20.9295 20 20.639 20H17M3.99999 14H3.69399C3.22056 13.9999 2.76245 14.1678 2.40117 14.4738C2.03989 14.7798 1.79887 15.204 1.72099 15.671L1.38799 17.671C1.34021 17.9575 1.35542 18.2511 1.43256 18.5311C1.50971 18.8112 1.64695 19.0711 1.83472 19.2928C2.0225 19.5144 2.25631 19.6925 2.51989 19.8146C2.78347 19.9368 3.07049 20 3.36099 20H6.99999L3.99999 14Z"
-                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  <div class="ml-3">400</div>
-                </div>
-                <div>
-                  <a href="#"
-                    class="py-2 px-4 rounded-full border-2 border-solid border-custom-third bg-white text-custom-third font-semibold hover:text-white hover:bg-gradient-to-r hover:from-custom-primary hover:to-custom-third">Lihat
-                    Kelas</a>
-                </div>
-              </div>
+          <div class="w-full self-end mt-6 md:mt-4 lg:w-1/2">
+            <div class="lg:mt-9 lg:right-0">
+              <img
+                src="/src/images/background_abstrak.svg"
+                alt="picture"
+                class="mx-auto"
+              />
             </div>
           </div>
         </div>
       </div>
-      <div class="mb-10 max-w-xl mx-auto text-center">
-        <a href="#"
-          class="font-semibold px-10 py-3 text-lg text-white bg-gradient-to-r from-custom-primary to-custom-third rounded-lg hover:opacity-90">Kelas
-          Lainnya</a>
-      </div>
-    </div>
-  </section>
-  <!-- class END -->
-</body>
+    </section>
+    <!-- Hero section end -->
 
+    <!-- class Start -->
+    <section class="pt-4">
+      <div class="container md:mx-auto">
+        <div class="max-w-xl mx-auto text-center mb-16">
+          <h4 class="font-semibold text-2xl text-custom-third">Kelas Kami</h4>
+          <h2 class="pt-6 font-semibold text-3xl mb-4 sm:text-4xl lg:text-3xl">
+            Kursus Terbaik Dengan Hasil Memuaskan
+          </h2>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-auto mx-auto">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <img
+                src="https://source.unsplash.com/329x183?programming"
+                alt="Portofolio 1"
+                class="w-full"
+              />
+              <div class="pt-4 pb-8 px-6 mb-auto space-y-2">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-custom-secondary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <div class="mx-2 font-light">5</div>
+                  <div class="font-light">(500)</div>
+                </div>
+                <div class="flex">
+                  <div class="text-xl font-bold w-full">UX Designer</div>
+                  <div class="font-light">Rp&nbsp;200.000</div>
+                </div>
+                <div class="w-full">Mentor - Herdetya</div>
+                <div class="flex justify-between items-center">
+                  <div class="flex">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.719 19.752L16.079 14.628C15.9883 13.9022 15.6356 13.2346 15.0872 12.7506C14.5387 12.2667 13.8324 11.9997 13.101 12H10.897C10.1659 12.0002 9.46007 12.2674 8.91208 12.7513C8.36408 13.2352 8.01165 13.9026 7.92099 14.628L7.27999 19.752C7.24481 20.0335 7.26993 20.3193 7.35367 20.5903C7.43741 20.8614 7.57786 21.1116 7.7657 21.3242C7.95353 21.5368 8.18445 21.707 8.44312 21.8235C8.70179 21.94 8.98229 22.0002 9.26599 22H14.734C15.0176 22.0001 15.298 21.9398 15.5565 21.8232C15.8151 21.7066 16.0459 21.5364 16.2336 21.3238C16.4213 21.1112 16.5617 20.8611 16.6454 20.5901C16.7291 20.3191 16.7542 20.0334 16.719 19.752V19.752Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M4 11C5.10457 11 6 10.1046 6 9C6 7.89543 5.10457 7 4 7C2.89543 7 2 7.89543 2 9C2 10.1046 2.89543 11 4 11Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M20 11C21.1046 11 22 10.1046 22 9C22 7.89543 21.1046 7 20 7C18.8954 7 18 7.89543 18 9C18 10.1046 18.8954 11 20 11Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M20 14H20.306C20.7794 13.9999 21.2375 14.1678 21.5988 14.4738C21.9601 14.7798 22.2011 15.204 22.279 15.671L22.612 17.671C22.6598 17.9575 22.6446 18.2511 22.5674 18.5311C22.4903 18.8112 22.353 19.0711 22.1653 19.2928C21.9775 19.5144 21.7437 19.6925 21.4801 19.8146C21.2165 19.9368 20.9295 20 20.639 20H17M3.99999 14H3.69399C3.22056 13.9999 2.76245 14.1678 2.40117 14.4738C2.03989 14.7798 1.79887 15.204 1.72099 15.671L1.38799 17.671C1.34021 17.9575 1.35542 18.2511 1.43256 18.5311C1.50971 18.8112 1.64695 19.0711 1.83472 19.2928C2.0225 19.5144 2.25631 19.6925 2.51989 19.8146C2.78347 19.9368 3.07049 20 3.36099 20H6.99999L3.99999 14Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <div class="ml-3">400</div>
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      class="py-2 px-4 rounded-full border-2 border-solid border-custom-third bg-white text-custom-third font-semibold hover:text-white hover:bg-gradient-to-r hover:from-custom-primary hover:to-custom-third"
+                      >Lihat Kelas</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-auto mx-auto">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <img
+                src="https://source.unsplash.com/329x183?online"
+                alt="Portofolio 1"
+                class="w-full"
+              />
+              <div class="pt-4 pb-8 px-6 mb-auto space-y-2">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-custom-secondary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <div class="mx-2 font-light">5</div>
+                  <div class="font-light">(500)</div>
+                </div>
+                <div class="flex">
+                  <div class="text-xl font-bold w-full">UX Designer</div>
+                  <div class="font-light">Rp&nbsp;200.000</div>
+                </div>
+                <div class="w-full">Mentor - Herdetya</div>
+                <div class="flex justify-between items-center">
+                  <div class="flex">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.719 19.752L16.079 14.628C15.9883 13.9022 15.6356 13.2346 15.0872 12.7506C14.5387 12.2667 13.8324 11.9997 13.101 12H10.897C10.1659 12.0002 9.46007 12.2674 8.91208 12.7513C8.36408 13.2352 8.01165 13.9026 7.92099 14.628L7.27999 19.752C7.24481 20.0335 7.26993 20.3193 7.35367 20.5903C7.43741 20.8614 7.57786 21.1116 7.7657 21.3242C7.95353 21.5368 8.18445 21.707 8.44312 21.8235C8.70179 21.94 8.98229 22.0002 9.26599 22H14.734C15.0176 22.0001 15.298 21.9398 15.5565 21.8232C15.8151 21.7066 16.0459 21.5364 16.2336 21.3238C16.4213 21.1112 16.5617 20.8611 16.6454 20.5901C16.7291 20.3191 16.7542 20.0334 16.719 19.752V19.752Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M4 11C5.10457 11 6 10.1046 6 9C6 7.89543 5.10457 7 4 7C2.89543 7 2 7.89543 2 9C2 10.1046 2.89543 11 4 11Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M20 11C21.1046 11 22 10.1046 22 9C22 7.89543 21.1046 7 20 7C18.8954 7 18 7.89543 18 9C18 10.1046 18.8954 11 20 11Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M20 14H20.306C20.7794 13.9999 21.2375 14.1678 21.5988 14.4738C21.9601 14.7798 22.2011 15.204 22.279 15.671L22.612 17.671C22.6598 17.9575 22.6446 18.2511 22.5674 18.5311C22.4903 18.8112 22.353 19.0711 22.1653 19.2928C21.9775 19.5144 21.7437 19.6925 21.4801 19.8146C21.2165 19.9368 20.9295 20 20.639 20H17M3.99999 14H3.69399C3.22056 13.9999 2.76245 14.1678 2.40117 14.4738C2.03989 14.7798 1.79887 15.204 1.72099 15.671L1.38799 17.671C1.34021 17.9575 1.35542 18.2511 1.43256 18.5311C1.50971 18.8112 1.64695 19.0711 1.83472 19.2928C2.0225 19.5144 2.25631 19.6925 2.51989 19.8146C2.78347 19.9368 3.07049 20 3.36099 20H6.99999L3.99999 14Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <div class="ml-3">400</div>
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      class="py-2 px-4 rounded-full border-2 border-solid border-custom-third bg-white text-custom-third font-semibold hover:text-white hover:bg-gradient-to-r hover:from-custom-primary hover:to-custom-third"
+                      >Lihat Kelas</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-auto mx-auto">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <img
+                src="https://source.unsplash.com/329x183?learning"
+                alt="Portofolio 1"
+                class="w-full"
+              />
+              <div class="pt-4 pb-8 px-6 mb-auto space-y-2">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-custom-secondary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <div class="mx-2 font-light">5</div>
+                  <div class="font-light">(500)</div>
+                </div>
+                <div class="flex">
+                  <div class="text-xl font-bold w-full">UX Designer</div>
+                  <div class="font-light">Rp&nbsp;200.000</div>
+                </div>
+                <div class="w-full">Mentor - Herdetya</div>
+                <div class="flex justify-between items-center">
+                  <div class="flex">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.719 19.752L16.079 14.628C15.9883 13.9022 15.6356 13.2346 15.0872 12.7506C14.5387 12.2667 13.8324 11.9997 13.101 12H10.897C10.1659 12.0002 9.46007 12.2674 8.91208 12.7513C8.36408 13.2352 8.01165 13.9026 7.92099 14.628L7.27999 19.752C7.24481 20.0335 7.26993 20.3193 7.35367 20.5903C7.43741 20.8614 7.57786 21.1116 7.7657 21.3242C7.95353 21.5368 8.18445 21.707 8.44312 21.8235C8.70179 21.94 8.98229 22.0002 9.26599 22H14.734C15.0176 22.0001 15.298 21.9398 15.5565 21.8232C15.8151 21.7066 16.0459 21.5364 16.2336 21.3238C16.4213 21.1112 16.5617 20.8611 16.6454 20.5901C16.7291 20.3191 16.7542 20.0334 16.719 19.752V19.752Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M4 11C5.10457 11 6 10.1046 6 9C6 7.89543 5.10457 7 4 7C2.89543 7 2 7.89543 2 9C2 10.1046 2.89543 11 4 11Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M20 11C21.1046 11 22 10.1046 22 9C22 7.89543 21.1046 7 20 7C18.8954 7 18 7.89543 18 9C18 10.1046 18.8954 11 20 11Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M20 14H20.306C20.7794 13.9999 21.2375 14.1678 21.5988 14.4738C21.9601 14.7798 22.2011 15.204 22.279 15.671L22.612 17.671C22.6598 17.9575 22.6446 18.2511 22.5674 18.5311C22.4903 18.8112 22.353 19.0711 22.1653 19.2928C21.9775 19.5144 21.7437 19.6925 21.4801 19.8146C21.2165 19.9368 20.9295 20 20.639 20H17M3.99999 14H3.69399C3.22056 13.9999 2.76245 14.1678 2.40117 14.4738C2.03989 14.7798 1.79887 15.204 1.72099 15.671L1.38799 17.671C1.34021 17.9575 1.35542 18.2511 1.43256 18.5311C1.50971 18.8112 1.64695 19.0711 1.83472 19.2928C2.0225 19.5144 2.25631 19.6925 2.51989 19.8146C2.78347 19.9368 3.07049 20 3.36099 20H6.99999L3.99999 14Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <div class="ml-3">400</div>
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      class="py-2 px-4 rounded-full border-2 border-solid border-custom-third bg-white text-custom-third font-semibold hover:text-white hover:bg-gradient-to-r hover:from-custom-primary hover:to-custom-third"
+                      >Lihat Kelas</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-auto mx-auto">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <img
+                src="https://source.unsplash.com/329x183?class"
+                alt="Portofolio 1"
+                class="w-full"
+              />
+              <div class="pt-4 pb-8 px-6 mb-auto space-y-2">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-custom-secondary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <div class="mx-2 font-light">5</div>
+                  <div class="font-light">(500)</div>
+                </div>
+                <div class="flex">
+                  <div class="text-xl font-bold w-full">UX Designer</div>
+                  <div class="font-light">Rp&nbsp;200.000</div>
+                </div>
+                <div class="w-full">Mentor - Herdetya</div>
+                <div class="flex justify-between items-center">
+                  <div class="flex">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.719 19.752L16.079 14.628C15.9883 13.9022 15.6356 13.2346 15.0872 12.7506C14.5387 12.2667 13.8324 11.9997 13.101 12H10.897C10.1659 12.0002 9.46007 12.2674 8.91208 12.7513C8.36408 13.2352 8.01165 13.9026 7.92099 14.628L7.27999 19.752C7.24481 20.0335 7.26993 20.3193 7.35367 20.5903C7.43741 20.8614 7.57786 21.1116 7.7657 21.3242C7.95353 21.5368 8.18445 21.707 8.44312 21.8235C8.70179 21.94 8.98229 22.0002 9.26599 22H14.734C15.0176 22.0001 15.298 21.9398 15.5565 21.8232C15.8151 21.7066 16.0459 21.5364 16.2336 21.3238C16.4213 21.1112 16.5617 20.8611 16.6454 20.5901C16.7291 20.3191 16.7542 20.0334 16.719 19.752V19.752Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M4 11C5.10457 11 6 10.1046 6 9C6 7.89543 5.10457 7 4 7C2.89543 7 2 7.89543 2 9C2 10.1046 2.89543 11 4 11Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M20 11C21.1046 11 22 10.1046 22 9C22 7.89543 21.1046 7 20 7C18.8954 7 18 7.89543 18 9C18 10.1046 18.8954 11 20 11Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M20 14H20.306C20.7794 13.9999 21.2375 14.1678 21.5988 14.4738C21.9601 14.7798 22.2011 15.204 22.279 15.671L22.612 17.671C22.6598 17.9575 22.6446 18.2511 22.5674 18.5311C22.4903 18.8112 22.353 19.0711 22.1653 19.2928C21.9775 19.5144 21.7437 19.6925 21.4801 19.8146C21.2165 19.9368 20.9295 20 20.639 20H17M3.99999 14H3.69399C3.22056 13.9999 2.76245 14.1678 2.40117 14.4738C2.03989 14.7798 1.79887 15.204 1.72099 15.671L1.38799 17.671C1.34021 17.9575 1.35542 18.2511 1.43256 18.5311C1.50971 18.8112 1.64695 19.0711 1.83472 19.2928C2.0225 19.5144 2.25631 19.6925 2.51989 19.8146C2.78347 19.9368 3.07049 20 3.36099 20H6.99999L3.99999 14Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <div class="ml-3">400</div>
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      class="py-2 px-4 rounded-full border-2 border-solid border-custom-third bg-white text-custom-third font-semibold hover:text-white hover:bg-gradient-to-r hover:from-custom-primary hover:to-custom-third"
+                      >Lihat Kelas</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-auto mx-auto">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <img
+                src="https://source.unsplash.com/329x183?cooking"
+                alt="Portofolio 1"
+                class="w-full"
+              />
+              <div class="pt-4 pb-8 px-6 mb-auto space-y-2">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-custom-secondary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <div class="mx-2 font-light">5</div>
+                  <div class="font-light">(500)</div>
+                </div>
+                <div class="flex">
+                  <div class="text-xl font-bold w-full">UX Designer</div>
+                  <div class="font-light">Rp&nbsp;200.000</div>
+                </div>
+                <div class="w-full">Mentor - Herdetya</div>
+                <div class="flex justify-between items-center">
+                  <div class="flex">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.719 19.752L16.079 14.628C15.9883 13.9022 15.6356 13.2346 15.0872 12.7506C14.5387 12.2667 13.8324 11.9997 13.101 12H10.897C10.1659 12.0002 9.46007 12.2674 8.91208 12.7513C8.36408 13.2352 8.01165 13.9026 7.92099 14.628L7.27999 19.752C7.24481 20.0335 7.26993 20.3193 7.35367 20.5903C7.43741 20.8614 7.57786 21.1116 7.7657 21.3242C7.95353 21.5368 8.18445 21.707 8.44312 21.8235C8.70179 21.94 8.98229 22.0002 9.26599 22H14.734C15.0176 22.0001 15.298 21.9398 15.5565 21.8232C15.8151 21.7066 16.0459 21.5364 16.2336 21.3238C16.4213 21.1112 16.5617 20.8611 16.6454 20.5901C16.7291 20.3191 16.7542 20.0334 16.719 19.752V19.752Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M4 11C5.10457 11 6 10.1046 6 9C6 7.89543 5.10457 7 4 7C2.89543 7 2 7.89543 2 9C2 10.1046 2.89543 11 4 11Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M20 11C21.1046 11 22 10.1046 22 9C22 7.89543 21.1046 7 20 7C18.8954 7 18 7.89543 18 9C18 10.1046 18.8954 11 20 11Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M20 14H20.306C20.7794 13.9999 21.2375 14.1678 21.5988 14.4738C21.9601 14.7798 22.2011 15.204 22.279 15.671L22.612 17.671C22.6598 17.9575 22.6446 18.2511 22.5674 18.5311C22.4903 18.8112 22.353 19.0711 22.1653 19.2928C21.9775 19.5144 21.7437 19.6925 21.4801 19.8146C21.2165 19.9368 20.9295 20 20.639 20H17M3.99999 14H3.69399C3.22056 13.9999 2.76245 14.1678 2.40117 14.4738C2.03989 14.7798 1.79887 15.204 1.72099 15.671L1.38799 17.671C1.34021 17.9575 1.35542 18.2511 1.43256 18.5311C1.50971 18.8112 1.64695 19.0711 1.83472 19.2928C2.0225 19.5144 2.25631 19.6925 2.51989 19.8146C2.78347 19.9368 3.07049 20 3.36099 20H6.99999L3.99999 14Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <div class="ml-3">400</div>
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      class="py-2 px-4 rounded-full border-2 border-solid border-custom-third bg-white text-custom-third font-semibold hover:text-white hover:bg-gradient-to-r hover:from-custom-primary hover:to-custom-third"
+                      >Lihat Kelas</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-auto mx-auto">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <img
+                src="https://source.unsplash.com/329x183?content"
+                alt="Portofolio 1"
+                class="w-full"
+              />
+              <div class="pt-4 pb-8 px-6 mb-auto space-y-2">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-custom-secondary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <div class="mx-2 font-light">5</div>
+                  <div class="font-light">(500)</div>
+                </div>
+                <div class="flex">
+                  <div class="text-xl font-bold w-full">UX Designer</div>
+                  <div class="font-light">Rp&nbsp;200.000</div>
+                </div>
+                <div class="w-full">Mentor - Herdetya</div>
+                <div class="flex justify-between items-center">
+                  <div class="flex">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.719 19.752L16.079 14.628C15.9883 13.9022 15.6356 13.2346 15.0872 12.7506C14.5387 12.2667 13.8324 11.9997 13.101 12H10.897C10.1659 12.0002 9.46007 12.2674 8.91208 12.7513C8.36408 13.2352 8.01165 13.9026 7.92099 14.628L7.27999 19.752C7.24481 20.0335 7.26993 20.3193 7.35367 20.5903C7.43741 20.8614 7.57786 21.1116 7.7657 21.3242C7.95353 21.5368 8.18445 21.707 8.44312 21.8235C8.70179 21.94 8.98229 22.0002 9.26599 22H14.734C15.0176 22.0001 15.298 21.9398 15.5565 21.8232C15.8151 21.7066 16.0459 21.5364 16.2336 21.3238C16.4213 21.1112 16.5617 20.8611 16.6454 20.5901C16.7291 20.3191 16.7542 20.0334 16.719 19.752V19.752Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M4 11C5.10457 11 6 10.1046 6 9C6 7.89543 5.10457 7 4 7C2.89543 7 2 7.89543 2 9C2 10.1046 2.89543 11 4 11Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M20 11C21.1046 11 22 10.1046 22 9C22 7.89543 21.1046 7 20 7C18.8954 7 18 7.89543 18 9C18 10.1046 18.8954 11 20 11Z"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M20 14H20.306C20.7794 13.9999 21.2375 14.1678 21.5988 14.4738C21.9601 14.7798 22.2011 15.204 22.279 15.671L22.612 17.671C22.6598 17.9575 22.6446 18.2511 22.5674 18.5311C22.4903 18.8112 22.353 19.0711 22.1653 19.2928C21.9775 19.5144 21.7437 19.6925 21.4801 19.8146C21.2165 19.9368 20.9295 20 20.639 20H17M3.99999 14H3.69399C3.22056 13.9999 2.76245 14.1678 2.40117 14.4738C2.03989 14.7798 1.79887 15.204 1.72099 15.671L1.38799 17.671C1.34021 17.9575 1.35542 18.2511 1.43256 18.5311C1.50971 18.8112 1.64695 19.0711 1.83472 19.2928C2.0225 19.5144 2.25631 19.6925 2.51989 19.8146C2.78347 19.9368 3.07049 20 3.36099 20H6.99999L3.99999 14Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <div class="ml-3">400</div>
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      class="py-2 px-4 rounded-full border-2 border-solid border-custom-third bg-white text-custom-third font-semibold hover:text-white hover:bg-gradient-to-r hover:from-custom-primary hover:to-custom-third"
+                      >Lihat Kelas</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10 max-w-xl mx-auto text-center">
+          <a
+            href="#"
+            class="font-semibold px-10 py-3 text-lg text-white bg-gradient-to-r from-custom-primary to-custom-third rounded-lg hover:opacity-90"
+            >Kelas Lainnya</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- class END -->
+
+    <!-- Testimoni Start -->
+    <section class="pt-8 bg-background">
+      <div class="container md:mx-auto">
+        <div class="max-w-xl mx-auto text-center mb-8">
+          <h4 class="font-semibold text-2xl text-custom-third">Testimoni</h4>
+        </div>
+        <div class="flex flex-col md:flex-row gap-4">
+          <div class="w-96 mx-auto">
+            <div class="bg-white rounded-lg shadow-lg mb-10">
+              <div class="flex flex-col items-center pb-5 pt-4 px-2">
+                <img
+                  src="https://source.unsplash.com/collection/9676885/300x300"
+                  alt="Portofolio 1"
+                  class="rounded-full w-[100px] h-[100px]"
+                />
+                <h3 class="pt-2">Firman Aji Prasetyo</h3>
+                <h2 class="pt-2 font-light">Mahasiswa</h2>
+                <h1 class="pt-2 font-light text-center">
+                  “ Aplikasinya sangat bagus memudahkan saya dalam mencari
+                  usaha”
+                </h1>
+                <img src="/src/images/star.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="w-96 mx-auto">
+            <div class="bg-white rounded-lg shadow-lg mb-10">
+              <div class="flex flex-col items-center pb-5 pt-4 px-2">
+                <img
+                  src="https://source.unsplash.com/collection/9676885/300x300"
+                  alt="Portofolio 1"
+                  class="rounded-full w-[100px] h-[100px]"
+                />
+                <h3 class="pt-2">Firman Aji Prasetyo</h3>
+                <h2 class="pt-2 font-light">Mahasiswa</h2>
+                <h1 class="pt-2 font-light text-center">
+                  “ Aplikasinya sangat bagus memudahkan saya dalam mencari
+                  usaha”
+                </h1>
+                <img src="/src/images/star.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="w-96 mx-auto">
+            <div class="bg-white rounded-lg shadow-lg mb-10">
+              <div class="flex flex-col items-center pb-5 pt-4 px-2">
+                <img
+                  src="https://source.unsplash.com/collection/9676885/300x300"
+                  alt="Portofolio 1"
+                  class="rounded-full w-[100px] h-[100px]"
+                />
+                <h3 class="pt-2">Firman Aji Prasetyo</h3>
+                <h2 class="pt-2 font-light">Mahasiswa</h2>
+                <h1 class="pt-2 font-light text-center">
+                  “ Aplikasinya sangat bagus memudahkan saya dalam mencari
+                  usaha”
+                </h1>
+                <img src="/src/images/star.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni End -->
+
+    <!-- content -->
+    <section>
+      <div class="container md:mx-auto">
+        <div class="flex flex-wrap py-6 px-6 space-x-14 -mb-20">
+          <div class="mx-auto">
+            <div
+              class="w-72 h-72 bg-transparent border-2 border-solid border-custom-third rounded-lg"
+            ></div>
+            <div class="-translate-y-[263px] translate-x-6 -mb-56">
+              <div
+                class="w-96 h-60 flex justify-center items-center bg-cover bg-center rounded-lg"
+                style="background-image: url('/src/images/html.jpg')"
+              >
+                <div>
+                  <div class="text-xl font-bold mb-4">Basic HTML</div>
+                  <a href="#" class="flex justify-center">
+                    <div
+                      class="w-20 h-20 flex justify-center items-center rounded-full place-self-center bg-custom-third hover:opacity-90"
+                    >
+                      <svg
+                        width="32"
+                        height="37"
+                        viewBox="0 0 52 57"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.40625 56.6251C1.78465 56.6251 1.18851 56.3782 0.748969 55.9386C0.309431 55.4991 0.0625 54.9029 0.0625 54.2813V2.71884C0.0625697 2.31156 0.168767 1.91134 0.370625 1.5576C0.572484 1.20387 0.863035 0.908846 1.21364 0.701605C1.56425 0.494365 1.9628 0.382062 2.37003 0.375768C2.77726 0.369474 3.17909 0.469406 3.53594 0.665713L50.4109 26.447C50.7784 26.6493 51.0848 26.9465 51.2983 27.3077C51.5117 27.6688 51.6243 28.0806 51.6243 28.5001C51.6243 28.9196 51.5117 29.3314 51.2983 29.6925C51.0848 30.0537 50.7784 30.3509 50.4109 30.5532L3.53594 56.3345C3.18988 56.525 2.80129 56.625 2.40625 56.6251Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid content-center">
+            <div class="mx-auto">
+              <div class="text-xl font-semibold -ml-5 w-auto md:w-1/2">
+                Bersiaplah Untuk Memulai Usaha Bersama Kami
+              </div>
+              <ul
+                class="marker:text-custom-third list-disc font-light text-sm w-auto md:w-1/2"
+              >
+                <li>
+                  Siapkan dirimu untuk memulai tantangan usaha dimasa yang akan
+                  datang bersama kami
+                </li>
+                <li>Pilih Kelas sesuai dengan keahlian yang anda minati</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- content end -->
+    <!-- content2 -->
+    <section>
+      <div class="container md:mx-auto mt-20 mb-10 px-20">
+        <div class="flex flex-col md:flex-row">
+          <div class="w-auto space-y-6">
+            <div class="grid grid-cols-2">
+              <div class="flex flex-col space-y-2">
+                <div>
+                  <img src="/src/images/certificate.svg" alt="certificate" />
+                </div>
+                <div class="font-bold text-xl">Sertificate</div>
+                <div class="font-light">
+                  Kamu akan mendapatkan sertifikat setelah menyelesaikan kelas
+                </div>
+              </div>
+              <div class="flex flex-col space-y-2">
+                <div>
+                  <img
+                    src="/src/images/expert_mentor.svg"
+                    alt="expert_mentor"
+                  />
+                </div>
+                <div class="font-bold text-xl">Expert Mentor</div>
+                <div class="font-light">Belajar dengan mentor terbaik</div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2">
+              <div class="flex flex-col space-y-2">
+                <div>
+                  <img src="/src/images/networking.svg" alt="networking" />
+                </div>
+                <div class="font-bold text-xl">Networking</div>
+                <div class="font-light">
+                  Anda akan banyak mendapatkan relasi setelah mengikuti kelas di
+                  platform kami
+                </div>
+              </div>
+              <div class="flex flex-col space-y-2">
+                <div>
+                  <img src="/src/images/vacancy.svg" alt="vacancy" />
+                </div>
+                <div class="font-bold text-xl">Vacancy</div>
+                <div class="font-light">
+                  Anda juga akan mendapatkan lowongan pekerjaan
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-auto">
+            <div class="flex flex-col text-right items-end">
+              <div class="w-auto">
+                <svg
+                  width="259"
+                  height="45"
+                  viewBox="0 0 259 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M196 21H258"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M11.79 33.21C9.83 33.21 8.03 32.75 6.39 31.83C4.75 30.91 3.45 29.64 2.49 28.02C1.53 26.38 1.05 24.53 1.05 22.47C1.05 20.43 1.53 18.6 2.49 16.98C3.45 15.34 4.75 14.06 6.39 13.14C8.03 12.22 9.83 11.76 11.79 11.76C13.77 11.76 15.57 12.22 17.19 13.14C18.83 14.06 20.12 15.34 21.06 16.98C22.02 18.6 22.5 20.43 22.5 22.47C22.5 24.53 22.02 26.38 21.06 28.02C20.12 29.64 18.83 30.91 17.19 31.83C15.55 32.75 13.75 33.21 11.79 33.21ZM11.79 29.46C13.05 29.46 14.16 29.18 15.12 28.62C16.08 28.04 16.83 27.22 17.37 26.16C17.91 25.1 18.18 23.87 18.18 22.47C18.18 21.07 17.91 19.85 17.37 18.81C16.83 17.75 16.08 16.94 15.12 16.38C14.16 15.82 13.05 15.54 11.79 15.54C10.53 15.54 9.41 15.82 8.43 16.38C7.47 16.94 6.72 17.75 6.18 18.81C5.64 19.85 5.37 21.07 5.37 22.47C5.37 23.87 5.64 25.1 6.18 26.16C6.72 27.22 7.47 28.04 8.43 28.62C9.41 29.18 10.53 29.46 11.79 29.46ZM29.9147 12.06V25.02C29.9147 26.44 30.2847 27.53 31.0247 28.29C31.7647 29.03 32.8047 29.4 34.1447 29.4C35.5047 29.4 36.5547 29.03 37.2947 28.29C38.0347 27.53 38.4047 26.44 38.4047 25.02V12.06H42.6347V24.99C42.6347 26.77 42.2447 28.28 41.4647 29.52C40.7047 30.74 39.6747 31.66 38.3747 32.28C37.0947 32.9 35.6647 33.21 34.0847 33.21C32.5247 33.21 31.1047 32.9 29.8247 32.28C28.5647 31.66 27.5647 30.74 26.8247 29.52C26.0847 28.28 25.7147 26.77 25.7147 24.99V12.06H29.9147ZM57.6427 33L53.0227 24.84H51.0427V33H46.8427V12.06H54.7027C56.3227 12.06 57.7027 12.35 58.8427 12.93C59.9827 13.49 60.8327 14.26 61.3927 15.24C61.9727 16.2 62.2627 17.28 62.2627 18.48C62.2627 19.86 61.8627 21.11 61.0627 22.23C60.2627 23.33 59.0727 24.09 57.4927 24.51L62.5027 33H57.6427ZM51.0427 21.69H54.5527C55.6927 21.69 56.5427 21.42 57.1027 20.88C57.6627 20.32 57.9427 19.55 57.9427 18.57C57.9427 17.61 57.6627 16.87 57.1027 16.35C56.5427 15.81 55.6927 15.54 54.5527 15.54H51.0427V21.69ZM85.3898 22.26C86.5698 22.48 87.5398 23.07 88.2998 24.03C89.0598 24.99 89.4398 26.09 89.4398 27.33C89.4398 28.45 89.1598 29.44 88.5998 30.3C88.0598 31.14 87.2698 31.8 86.2298 32.28C85.1898 32.76 83.9598 33 82.5398 33H73.5098V12.06H82.1498C83.5698 12.06 84.7898 12.29 85.8098 12.75C86.8498 13.21 87.6298 13.85 88.1498 14.67C88.6898 15.49 88.9598 16.42 88.9598 17.46C88.9598 18.68 88.6298 19.7 87.9698 20.52C87.3298 21.34 86.4698 21.92 85.3898 22.26ZM77.7098 20.7H81.5498C82.5498 20.7 83.3198 20.48 83.8598 20.04C84.3998 19.58 84.6698 18.93 84.6698 18.09C84.6698 17.25 84.3998 16.6 83.8598 16.14C83.3198 15.68 82.5498 15.45 81.5498 15.45H77.7098V20.7ZM81.9398 29.58C82.9598 29.58 83.7498 29.34 84.3098 28.86C84.8898 28.38 85.1798 27.7 85.1798 26.82C85.1798 25.92 84.8798 25.22 84.2798 24.72C83.6798 24.2 82.8698 23.94 81.8498 23.94H77.7098V29.58H81.9398ZM97.1372 15.45V20.7H104.187V24.03H97.1372V29.58H105.087V33H92.9372V12.03H105.087V15.45H97.1372ZM126.964 33H122.764L113.254 18.63V33H109.054V12.03H113.254L122.764 26.43V12.03H126.964V33ZM135.465 15.45V20.7H142.515V24.03H135.465V29.58H143.415V33H131.265V12.03H143.415V15.45H135.465ZM160.311 12.06V15.45H151.581V20.82H158.271V24.15H151.581V33H147.381V12.06H160.311ZM167.64 12.06V33H163.44V12.06H167.64ZM186.189 12.06V15.45H180.609V33H176.409V15.45H170.829V12.06H186.189Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+              <div class="font-bold text-3xl" class="w-auto">
+                MEMBUAT BELAJAR ANDA MENYENANGKAN
+              </div>
+              <div>
+                <img src="/src/images/tv.jpg" alt="tv" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- content2 end -->
+    <footer>
+      <div class="container-fluid">
+        <div
+          class="flex bg-custom-fifth px-20 py-6 justify-center text-center md:text-left md:justify-between"
+        >
+          <div class="w-1/2 space-y-2">
+            <div class="flex justify-center md:justify-start">
+              <img src="/src/images/sagetbawah.svg" alt="" class="max-h-12" />
+            </div>
+            <divc class="text-white"
+              >Saget Bisnis, Kursus Terbaik Pilihan Anda</divc
+            >
+            <div class="text-white">(0812893123)</div>
+            <div
+              class="flex flex-row space-x-4 justify-center md:justify-start"
+            >
+              <a href="https://unimma.link/rlZA" target="_blank">
+                <img src="/src//images/ig.svg" alt="" class="max-h-6" />
+              </a>
+              <a href="#">
+                <img src="/src/images/facebook.svg" alt="" class="max-h-6" />
+              </a>
+              <a href="https://wa.me/6285715928302">
+                <img src="/src/images/wa.svg" alt="" class="max-h-6" />
+              </a>
+            </div>
+          </div>
+          <div class="hidden md:grid grid-cols-4 text-white gap-20">
+            <div class="space-y-2">
+              <div class="font-bold">Informasi</div>
+              <div class="font-extralight">
+                <a href="#">
+                  <div>Kelas</div>
+                </a>
+                <a href="#">
+                  <div>Pembayaran</div>
+                </a>
+                <a href="#">
+                  <div>Mentor</div>
+                </a>
+                <a href="#">
+                  <div>Perusahaan</div>
+                </a>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <div class="font-bold">Support</div>
+              <div class="font-extralight">
+                <a href="#">
+                  <div>FAQs</div>
+                </a>
+                <a href="#">
+                  <div>Self Service</div>
+                </a>
+                <a href="#">
+                  <div>Privacy Policy</div>
+                </a>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <div class="font-bold">Komunitas</div>
+              <div class="font-extralight">
+                <a href="#">
+                  <div>Telegram</div>
+                </a>
+                <a href="#">
+                  <div>Instagram</div>
+                </a>
+                <a href="#">
+                  <div>Discord</div>
+                </a>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <div class="font-bold">Alamat</div>
+              <div class="font-extralight">
+                <a href="https://unimma.link/o0DU" target="_blank" class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  &nbsp;Magelang
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
